@@ -1,0 +1,102 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@900&display=swap');
+/* font-family: 'Exo', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&display=swap');
+
+/* font-family: 'Kalam', cursive; */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --marrom: #884A39;
+    --marromclaro: #C38154;
+    --amarelo: #FFC26F;
+    --beje: #F9E0BB;
+    --fonte-texto: 'Kalam', cursive;
+    ;
+    --fonte-titulo: 'Exo', sans-serif;
+    --fonte-sub-titulo: 'Ysabeau Infant', sans-serif;
+}
+
+html,
+body {
+    min-height: 100vh;
+    background-color: var(--beje);
+}
+
+header {
+    background-color: var(--marrom);
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 6vw;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-variant: small-caps;
+    font-family: var(--fonte-titulo);
+}
+
+header h2 {
+    font-size: 3vw;
+    padding: 5px;
+    text-align: right;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    font-size: 3vw;
+    padding-left: 30px;
+    font-family: var(--fonte-texto);
+}
+
+section.bg-branco {
+    background-color: white;
+    color: black;
+}
+
+section.bg-img {
+    background-color: #0000006c;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px #00000075;
+}
+
+.bg-img p {
+    background-color: #00000071;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 20px;
+    text-shadow: 2px 2px 0px black;
+}
+
+section#daisy {
+    background: var(--marromclaro) url(../img/daisy-m.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+
+section#letter {
+    background: var(--marromclaro) url(../img/letter-m.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--beje);
+}
+
+footer {
+    background-color: var(--marromclaro);
+    color: white;
+    padding: 3px;
+    text-align: center;
+    font-size: 2vw;
+}
